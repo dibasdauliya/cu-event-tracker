@@ -10,9 +10,10 @@ From your terminal:
 npm run dev
 ```
 
-https://devtools.tech/blog/add-social-authentication-to-remix-run-project-or-remix-server---rid---GEN4IbgWorJNeQL7Gkm8
+## References
 
-https://blog.logrocket.com/building-full-stack-app-with-remix-prisma/
+- https://devtools.tech/blog/add-social-authentication-to-remix-run-project-or-remix-server---rid---GEN4IbgWorJNeQL7Gkm8
+- https://blog.logrocket.com/building-full-stack-app-with-remix-prisma/
 
 This starts your app in development mode, rebuilding assets on file changes.
 

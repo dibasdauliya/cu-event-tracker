@@ -28,8 +28,8 @@ model Event {
   updatedAt DateTime @updatedAt
 
   title       String
-  date        DateTime
-  description String   @db.VarChar(1000)
+  date        String
+  description String  @db.VarChar(1000)
   image       String?
   location    String?
   organizer   String?
@@ -39,6 +39,8 @@ model Event {
 
   userId String
   user   User   @relation(fields: [userId], references: [id])
+
+  @@index([userId])
 }
 
 model EventComments {
@@ -52,4 +54,7 @@ model EventComments {
   user    User   @relation(fields: [userId], references: [id])
   eventId String
   event   Event  @relation(fields: [eventId], references: [id])
+
+  @@index([userId])
+  @@index([eventId])
 }
