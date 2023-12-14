@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .input-custom-style {
+    @apply px-2 py-3 rounded-sm outline-none focus:border-brand border;
+  }
+}
